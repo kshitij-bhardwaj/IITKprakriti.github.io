@@ -10,7 +10,7 @@
   Base
 ========================================================================== */
 body {
-  font-family: "Open sans", sans-serif;
+  font-family: 'Bree serif', sans-serif;
   color: #115c9b;
 }
 
@@ -18,7 +18,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 a {
@@ -109,7 +109,7 @@ a:hover, a:focus, a:active {
   font-size: 16px;
 }
 .navbar-main li a {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 18px;
   padding: 20px 15px;
   border-bottom: 2px solid transparent;
@@ -150,14 +150,17 @@ a:hover, a:focus, a:active {
   width: 50px;
 }
 .carousel-home .carousel-caption {
+  color: black;
+  text-shadow: 1.2px 1.2px rgb(95, 94, 94);
   top: 50%;
   bottom: auto;
   transform: translateY(-100%);
 }
 .carousel-home .carousel-title {
-  color: #fff;
-  font-family: "Dosis", sans-serif;
-  font-size: 50px;
+  color: black;
+  text-shadow: 1.7px 1.7px rgb(95, 94, 94);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 55px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -168,7 +171,6 @@ a:hover, a:focus, a:active {
 .carousel-home .btn {
   margin-top: 30px;
 }
-
 .section-home {
   margin: 30px 0;
 }
@@ -191,6 +193,8 @@ a:hover, a:focus, a:active {
   height: 365px;
   padding: 25px;
   text-align: center;
+  box-shadow: 4px 4px rgb(92, 86, 86);
+  border-radius: 10px;
   background-color: #0076a3;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMjgwODE0IiB5MT0iLTAuMTAyMjA4IiB4Mj0iMC43MTkxODYiIHkyPSIxLjEwMjIwOCI+PHN0b3Agb2Zmc2V0PSItMjUlIiBzdG9wLWNvbG9yPSIjMTE1YjliIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMxMjkwZjgiLz48c3RvcCBvZmZzZXQ9IjEyNSUiIHN0b3AtY29sb3I9IiMxMTViOWIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -222,6 +226,7 @@ a:hover, a:focus, a:active {
   overflow: hidden;
 }
 .reasons-col img {
+  border-radius:10px;
   width: 100%;
   -moz-transition: all, 0.5s;
   -o-transition: all, 0.5s;
@@ -598,7 +603,7 @@ form .alert {
 .btn-primary {
   background: #115c9b;
   border: none;
-  border-radius: 0;
+  border-radius: 8px;
   padding: 10px 25px;
   border: 1px solid transparent;
   -moz-transition: all, 0.3s;
@@ -784,7 +789,7 @@ form .alert {
   right: 5px;
   font-style: 18px;
   display: block;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   bottom: -50px;
   -moz-transition: all, 0.6s;
   -o-transition: all, 0.6s;
@@ -939,6 +944,12 @@ form .alert {
   .carousel-home .carousel-subtitle {
     font-size: 16px;
   }
+  .carousel-home .carousel-caption {
+    text-shadow: 0.4px 0.4px rgb(95, 94, 94);
+  }
+  .carousel-home .carousel-title {
+    text-shadow: 0.8px 0.8px rgb(95, 94, 94);
+  }
   .carousel-home .carousel-control {
     background: #1f76bd;
     height: 40px;
@@ -953,6 +964,22 @@ form .alert {
 
   .col-form {
     margin-bottom: 25px;
+  }
+  .help{
+    font-size: 10.5px;
+  }
+  .carousel-caption{
+    margin-top:65px;
+  }
+  .about-us-col img{
+    height: 60px;
+    width:60px;
+  }
+  .about-us-col h3{
+    margin-top:0;
+  }
+  .video-container{
+    margin-bottom:15px;
   }
 }
 /* Extra Small devices (tablets, 480px and Down) */
@@ -1160,6 +1187,23 @@ form .alert {
   animation-name: zoomIn;
 }
 
+.video-container { 
+  border-radius: 10px;
+  box-shadow: 4px 4px rgb(92, 86, 86);
+  position: relative;
+  padding-bottom: 56.25%; 
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden; 
+}
+
+.video-container iframe{ 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+}
 
 
 /**************************************************/
@@ -1234,7 +1278,7 @@ li.dropdown {
     display: none;
     position: absolute;
     background-color: #1f76bd;
-	color: white
+	  color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	text-transform: uppercase
@@ -1288,9 +1332,10 @@ li.dropdown {
 }
 
 .button1 {
-    background-color: #4CAF50; 
+  background-color: #4CAF50; 
     color: black; 
     border: 2px solid #4CAF50;
+    border-radius: 6px;
 }
 
 .button1:hover {
